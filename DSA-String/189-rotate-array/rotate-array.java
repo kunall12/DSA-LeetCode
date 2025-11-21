@@ -1,4 +1,5 @@
 class Solution {
+    //  Rotate Array
     public void rotate(int[] arr,int k) {
         k=k%arr.length;
         reverseArray(arr,0,arr.length-1);
