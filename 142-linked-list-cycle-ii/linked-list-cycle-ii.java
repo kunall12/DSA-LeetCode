@@ -18,9 +18,11 @@ public class Solution {
             slow=slow.next;
             fast=fast.next.next;
 
-            if(slow==fast){
+            if(slow==fast){//where slow==fast cycle found
+                //now reset the slow ptr and initialize p1 
                 ListNode p1=head;
                 ListNode p2=slow;
+                //move both node 1 step at a time where the value become equal i.e. cycle starts
                 while(p1!=p2){
                     p1=p1.next;
                     p2=p2.next;
